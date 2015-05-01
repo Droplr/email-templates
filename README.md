@@ -1,41 +1,16 @@
-# Cerberus Responsive Email Patterns
-
-<a href="http://tedgoas.github.io/Cerberus/"><img src="http://tedgoas.github.io/Cerberus/assets/logo.png" alt="Cerberus logo" width="75" height="64" align="left" hspace="10" vspace="6"></a>
-
-Coding regular emails is hard enough by itself. Making them responsive shouldn't add to the headache. A few simple, but solid patterns are all that's needed to optimize emails for small screens.
-
-**That's what Cerberus is.**
-
-It's just a few responsive email patterns that go a long way. The code blocks are compartmentalized so that they may be used, reused, and nested to build an email.
-
-## **[Learn More and See Examples](http://tedgoas.github.io/Cerberus/)** ##
-
-***
+# Email Templates
+This repo will hold our email templates, which follow the patterns created by [Cerberus](http://tedgoas.github.io/Cerberus/).
 
 ## Contents
+Our custom templates use media queries and are based off of `template-with-media-queries.html`.
 
-**`template-without-media-queries.html`** - This template focuses on a fluid layout that sizes itself regardless of media query support. Good for when media queries aren't available to detect device size and reconfigure the layout.
+### `base-responsive-template.html`
+This template shows the various components we might use in an email, such as thumbnails and buttons.
 
-**`template-with-media-queries.html`** - This template uses media queries to reconfigure the layout for different screen sizes. Good for when you want more control over the email layout.
+### `welcome-template.html`
+This template is for the new welcome email in Intercom. [Here's the draft of the email](https://app.intercom.io/a/apps/604d24eb524b3aff74f79015ad1715189f0b38b4/messages/auto/5603181/edit) in Intercom.
 
-***
+## Intercom
+The [Responsive Template](https://app.intercom.io/apps/604d24eb524b3aff74f79015ad1715189f0b38b4/custom_email_templates/8864) with `welcome-template.html`.
 
-## Author
-
-Hi there, I’m Ted Goas, the core author and maintainer. I'm a designer & front-end developer working on websites, web apps, and HTML emails. And I enjoy [talking shop on Twitter](https://twitter.com/TedGoas).
-
-***
-
-## License
-
-Let's go with something simple and permissive, shall we?
-
-[The MIT License (MIT)](http://choosealicense.com/licenses/mit/).
-
-Copyright (c) 2015 Ted Goas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+For new templates, just copy the HTML over and insert a `{{ content }}` tag where the content of the WYSIWYG editor will go. The template also needs an `{{ unsubscribe_link }}` tag. The `welcom-template.html` template already has these in place.
