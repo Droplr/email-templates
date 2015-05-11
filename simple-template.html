@@ -16,6 +16,7 @@
   font-size: 100%;
   line-height: 1.6;
   color: #444444;
+  box-sizing: border-box;
 }
 
 img {
@@ -99,6 +100,7 @@ table.body-wrap .container {
 ------------------------------------- */
 table.footer-wrap {
   width: 100%;
+  padding: 0 20px;
   clear: both!important;
 }
 
@@ -110,6 +112,23 @@ table.footer-wrap {
 
 table.footer-wrap a {
   color: #999;
+}
+
+table.footer-wrap .social-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+table.footer-wrap .social-link img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+  vertical-align: top;
+}
+
+table.footer-wrap .name {
+  margin-bottom: 0;
 }
 
 
@@ -232,6 +251,24 @@ ul li, ol li {
       <!-- content -->
       <div class="content">
         <table>
+          <tr>
+            <td>
+              <p>
+                <a href="https://twitter.com/droplr" class="social-link">
+                  <img src="http://bernar.d.pr/11TjR+" alt="Twitter Logo">Twitter
+                </a>
+                <a href="https://www.facebook.com/droplr" class="social-link">
+                  <img src="http://bernar.d.pr/1cGSX+" alt="Facebook Logo">Facebook
+                </a>
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="name">Droplr</p>
+              <p class="address">915 NW Gasoline Alley, Suite 200, Bend, OR 97701</p>
+            </td>
+          </tr>
           <tr>
             <td align="center">
               <p>Don't like these annoying emails? <a href="{{ocx_unsubscribe_link}}">Unsubscribe</a>.
