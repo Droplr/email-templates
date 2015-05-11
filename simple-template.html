@@ -1,0 +1,252 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Really Simple HTML Email Template</title>
+<style>
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.6;
+  color: #444444;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100%!important;
+  height: 100%;
+}
+
+
+/* -------------------------------------
+    ELEMENTS
+------------------------------------- */
+a {
+  color: #9646ff;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #9646ff;
+  border: solid #9646ff;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #aaa;
+  border: solid #aaa;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.last {
+  margin-bottom: 0;
+}
+
+.first {
+  margin-top: 0;
+}
+
+.padding {
+  padding: 10px 0;
+}
+
+
+/* -------------------------------------
+    BODY
+------------------------------------- */
+table.body-wrap {
+  width: 100%;
+  padding: 20px;
+}
+
+table.body-wrap .container {
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+}
+
+
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+table.footer-wrap {
+  width: 100%;
+  clear: both!important;
+}
+
+.footer-wrap .container p {
+  font-size: 12px;
+  color: #666;
+
+}
+
+table.footer-wrap a {
+  color: #999;
+}
+
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #222222;
+  margin: 40px 0 10px;
+  line-height: 1.2;
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 22px;
+}
+
+p, ul, ol {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+ul li, ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+
+/* ---------------------------------------------------
+    RESPONSIVENESS
+    Nuke it from orbit. It's the only way to be sure.
+------------------------------------------------------ */
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container {
+  display: block!important;
+  max-width: 600px!important;
+  margin: 0 auto!important; /* makes it centered */
+  clear: both!important;
+}
+
+/* Set the padding on the td rather than the div for Outlook compatibility */
+.body-wrap .container {
+  padding: 20px;
+}
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Let's make sure tables in the content area are 100% wide */
+.content table {
+  width: 100%;
+}
+
+</style>
+</head>
+
+<body bgcolor="#f6f6f6">
+
+<!-- body -->
+<table class="body-wrap" bgcolor="#f6f6f6">
+  <tr>
+    <td></td>
+    <td height="70" align="center"><img src="http://droplr.com/wp-content/uploads/2015/05/Screen-Shot-2015-05-05-at-2.50.05-PM.png" width="100" alt="Droplr logo" /></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="container" bgcolor="#FFFFFF">
+
+      <!-- content -->
+      <div class="content">
+      <table>
+        <tr>
+          <td>
+            <p>Hi there,</p>
+            <p>We have big news: Droplr is all new. New freemium pricing, new referral program, new iOS app, new everything.</p>
+            <h2>Use Droplr for free</h2>
+            <p>Now anyone can share files with Droplr for free. Droplr Free files will self destruct in seven days. It's like Snapchat, but for files.</p>
+            <p><a href="http://droplr.com/pricing">Droplr Pro</a> users get to keep their files forever, customize their download pages, and use a custom domain for their drop links. All Droplr users will get the awesome features we've added during the past few months, including link before upload, screen recording w/audio, reaction GIFs, and our all-new apps.</p>
+            <h2>Refer a friend, get $10</h2>
+            <p>Starting today, you can easily invite friends, family and co-workers to join Droplr. Along with your invite, you'll be sending them a $10 credit for joining. And best yet, as a thank you for helping us spread the word, if they sign up for a Pro account, we'll send you a $10 gift card as well. There's no limit to how much credit you can earn, so feel free to place your invite link on your blog or webpage. You can invite people and grab your referral link from <a href="https://d.pr/billing">the billing section of your account settings.</a></p>
+            <h2>New app for iPhone, iPod &amp; iPad</h2>
+            <p>We've <a href="http://droplr.com/droplr-v4-for-ios">redesigned our iOS app from the ground</a> up for iOS 8. It has an all-new interface featuring super-slick contextual menus, an account management screen, an iOS sharing extension, and more. It's available now to <a href="https://itunes.apple.com/us/app/droplr/id500264329">download on the App Store</a></p>
+            <h2>New app for Mac</h2>
+            <p>Droplr for Mac has also been updated. It’s faster, easier to use, and now features real-time push with our iOS app. Upload something from your iPhone or iPad and automatically copy the link on your Mac. It also features a redesigned interface that displays your last 20 drops and makes the menu options more accessible.
+            <p>The new Mac app will be available shortly on the Mac App Store. Keep an eye out for it and follow us on Twitter for a notification of when it's released.</p>
+            <h2>A new look</h2>
+            <p>Last but not least, we've updated the look of Droplr, including an all-new logo by our friends at <a href="http://www.wk.com">Wieden+Kennedy</a>, and an all new website. The new site includes a <a href="http://droplr.com/getting-started">new help section</a> which makes learning about Droplr's power features even easier.</p>
+            <h2>And more...</h2>
+            <p>We have many more updates planned in the coming months including: updates to Windows, Android, a better way to organize your drops, a way to share many drops at once, great ways to receive files, and more. Follow us on our <a href="http://droplr.com/blog">blog</a> and on <a href="http://twitter.com/droplr">Twitter</a> for the latest news.</p>
+          </td>
+        </tr>
+      </table>
+      </div>
+      <!-- /content -->
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /body -->
+
+<!-- footer -->
+<table class="footer-wrap">
+  <tr>
+    <td></td>
+    <td class="container">
+
+      <!-- content -->
+      <div class="content">
+        <table>
+          <tr>
+            <td align="center">
+              <p>Don't like these annoying emails? <a href="{{ocx_unsubscribe_link}}">Unsubscribe</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- /content -->
+
+    </td>
+    <td></td>
+  </tr>
+</table>
+<!-- /footer -->
+
+</body>
+</html>
